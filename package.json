@@ -1,5 +1,17 @@
 {
   "dependencies": {
     "cypress": "^13.7.0"
-  }
+  },
+  "name": "newprectice",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install && npm run cy:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
