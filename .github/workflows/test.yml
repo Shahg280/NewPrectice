@@ -19,4 +19,5 @@ jobs:
         with:
           # Set always-auth in npmrc.
           cache: "npm"
+          run: "test"
           
