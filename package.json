@@ -5,10 +5,19 @@
   "name": "newprectice",
   "version": "1.0.0",
   "main": "cypress.config.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "cypress-multi-reporters": "^1.6.4",
+    "mocha": "^10.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
   "scripts": {
     "test": "npx cypress run",
-    "build": "npm install && npm run cy:run"
+    "build": "npm install && npm run cy:run",
+    "test:chrome": "cypress run --browser chrome",
+    "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
+    "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   },
   "keywords": [],
   "author": "",
