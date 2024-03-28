@@ -10,6 +10,8 @@ jobs:
     container: cypress/browsers:node12.16.2-chrome81-ff75
     steps:
     - uses: actions/checkout@v2
+    - name: Cypress.io
+      uses: cypress-io/github-action@v6.5.0
     - name: Install a project with a clean slate
       run: |
         npm ci
