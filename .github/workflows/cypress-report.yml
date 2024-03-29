@@ -25,5 +25,5 @@ jobs:
           # Artifact name
           name: MyReport
           # A file, directory or wildcard pattern that describes what to upload
-          path: cypress/report
+          path: cypress/reports/html
           retention-days: 30
