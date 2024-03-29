@@ -18,3 +18,11 @@ jobs:
         uses: cypress-io/github-action@v6.5.0 
         with:
            browser: chrome
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.3.1
+        with:
+          # Artifact name
+          name: MyReport
+          # A file, directory or wildcard pattern that describes what to upload
+          path: cypress/report
+          retention-days: 30
