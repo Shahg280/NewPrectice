@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: 'mcd9a5',
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
@@ -10,7 +11,8 @@ module.exports = defineConfig({
   return config;
     },
   },
-  reporter:'cypress-mochawesome-reporter'
+  reporter:'cypress-mochawesome-reporter',
+  "screenshotsFolder": "cypress/reports/html/assets"
   // reporter: 'cypress-multi-reporters',
   // reporterOptions: {
   //   configFile: 'reporter-config.json'
