@@ -11,8 +11,8 @@ module.exports = defineConfig({
   return config;
     },
   },
-  reporter:'cypress-mochawesome-reporter',
-  "screenshotsFolder": "cypress/reports/html/assets"
+  "screenshotOnRunFailure":true,
+  "screenshotsFolder": "cypress/reports/mochareports/assets"
   // reporter: 'cypress-multi-reporters',
   // reporterOptions: {
   //   configFile: 'reporter-config.json'

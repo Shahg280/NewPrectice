@@ -10,7 +10,7 @@ context('Assertions', () => {
       // https://on.cypress.io/should
       cy.get('.assertion-table')
         .find('tbody tr:last')
-        .should('have.class', 'success')           //Remove 1 
+        .should('have.class', 'success1')           //Remove 1 
         .find('td')
         .first()
         // checking the text of the <td> element in various ways
